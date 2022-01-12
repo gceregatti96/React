@@ -1,25 +1,10 @@
-import logo from './logo.svg';
+import react from "react";
+import Main from "./components/Main";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//usar sempre uma div para envolver os elementos ou um fragment <>
+// para a funçao aparecer na tela precisa exportar pode ser colocado tambem antes da function
 
-export default App;
+export default function App() {
+  return <Main />
+}
